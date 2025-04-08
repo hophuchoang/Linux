@@ -10,3 +10,6 @@ bt3:
 
 bt4:
 	gcc -o $(BIN_DIR)/bai4 $(SOURCE_DIR)/bai4.c
+
+clean:
+	rm -rf $(BIN_DIR)/*
