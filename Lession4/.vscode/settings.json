@@ -1,0 +1,22 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/hoang/catkin_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/hoang/catkin_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "files.associations": {
+        "pthread.h": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "string.h": "c",
+        "thread": "c",
+        "mutex": "c",
+        "shared_mutex": "c",
+        "condition_variable": "c",
+        "future": "c"
+    }
+}
