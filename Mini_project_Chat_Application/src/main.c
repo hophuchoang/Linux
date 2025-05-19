@@ -92,6 +92,7 @@ int main(int argc, char *argv[])
                 if (peer.fd > max_fd) max_fd = peer.fd;
 
             }else{
+                close(peer.fd);
                 print_console(WAR, "Cannot add new connection because the number is over limit!");
             }
         }
@@ -149,6 +150,7 @@ int main(int argc, char *argv[])
                 break;
 
             }else if (strcmp(key_param, "connect") == 0){
+                int add_new_peer = 0;
                 socket_conn_t peer;
 
                 if (is_number(param2) == 0){
@@ -161,6 +163,11 @@ int main(int argc, char *argv[])
                     continue;
                 }
 
+                if (list_connection[MAX_CONNECTION - 1].fd > 0){
+                    print_console(WAR, "Can't create peer, The application has reached the allowed number of connections.\n");
+                    continue;
+                }
+
                 if (create_peer_client(&peer, param1, atoi(param2)) == 0){
                     print_console(ERR, "create socket client fail!\n");
                     continue;
@@ -168,10 +175,10 @@ int main(int argc, char *argv[])
 
                 print_console(INF, "Create socket completed\n");
 
-                // // Thêm vào danh sách client
                 for (int i = 0; i < MAX_CONNECTION; i++) {
                     if (list_connection[i].fd < 0) {
                         list_connection[i] = peer;
+                        add_new_peer = 1;
                         break;
                     }
                 }
