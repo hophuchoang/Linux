@@ -3,13 +3,13 @@
 Welcome to the **Linux Programming Course**!  
 This course is designed for learners who want to gain practical skills in Linux systems, focusing on low-level programming concepts such as processes, threads, IPC, and socket communication.
 
-## 📚 Course Structure
+## Course Structure
 
 The course is divided into the following modules:
 
 ### 1. General_Knowledge
 > **Overview of Linux Operating System**  
-Learn the fundamentals of Linux, including system architecture, user/kernel space, basic commands, and software development tools. Understand how Linux differs from other operating systems and why it's widely used in embedded systems and servers.
+Learn the fundamentals of Linux, including system architecture, basic commands, and software development tools.
 
 ### 2. File_System
 > **Understanding Linux File System Hierarchy and Operations**  
@@ -21,7 +21,7 @@ Learn how to create and manage processes using `fork()`, `exec()`, and `wait()`.
 
 ### 4. Thread
 > **Multithreading in Linux**  
-Understand the difference between processes and threads. Learn how to create and synchronize threads using the POSIX Threads (pthreads) API.
+Understand the difference between processes and threads. Learn how to createthreads
 
 ### 5. Socket
 > **Socket Programming Basics**  
@@ -37,7 +37,6 @@ Understand anonymous and named pipes for communication between related or unrela
 
 ### 8. Mini Project - TCP Chat Application
 > **Build a Command-Line Chat Application using TCP Sockets**  
-Put all your knowledge together by building a chat system using socket programming. Implement server-client communication, handle multiple clients, and manage message broadcasting.
 
 ---
 
