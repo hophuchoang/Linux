@@ -40,7 +40,7 @@ Understand anonymous and named pipes for communication between related or unrela
 
 ---
 
-## 🛠 Requirements
+## Requirements
 
 - Basic knowledge of C programming
 - Linux system (Ubuntu recommended)
