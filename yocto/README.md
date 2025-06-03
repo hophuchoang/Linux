@@ -138,7 +138,7 @@ bitbake-layers add-layer ../meta-devlinux
 ### image example
 ![sdk](image/sdk.png)
 
-## 7. Build image RASPI
+## 8. Build image RASPI
 
 ### image example
 ![iamge_ras](image/build_image_rasp.png)
