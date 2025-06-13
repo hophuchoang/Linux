@@ -38,6 +38,12 @@ Understand anonymous and named pipes for communication between related or unrela
 ### 8. Mini Project - TCP Chat Application
 > **Build a Command-Line Chat Application using TCP Sockets**  
 
+### 9. Build Yoctor for Linux Device
+> **Build custom Linux distributions for embedded devices. It supports various hardware architectures and provides a flexible, modular, and reproducible build system using BitBake and layers**  
+
+### 10. Basic Kernel module
+> **Build and Use character device file**  
+
 ---
 
 ## Requirements
